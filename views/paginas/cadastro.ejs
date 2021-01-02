@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro</title>
+  </head>
+
+  <body>
+    <nav style="margin-bottom: 30px">
+      <ul>
+        <li><a href="http://localhost:3000/">Home</a></li>
+        <li><a href="http://localhost:3000/cadastro">Cadastrar</a></li>
+        <li><a href="http://localhost:3000/frontend">Cadastrados(FRONT)</a></li>
+        <li><a href="http://localhost:3000/b">Cadastrados(BACK)</a></li>
+      </ul>
+    </nav>
+
+    <h1>Register the tecnology:</h1>
+    <form method="post" action="/cadastro/salvar">
+      Categoria:
+      <select name="categoria">
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+      </select>
+      Conteudo: <input type="text" name="conteudo" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

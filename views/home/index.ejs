@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <nav style="margin-bottom: 30px">
+      <ul>
+        <li><a href="http://localhost:3000/">Home</a></li>
+        <li><a href="http://localhost:3000/cadastro">Cadastrar</a></li>
+        <li><a href="http://localhost:3000/frontend">Cadastrados(FRONT)</a></li>
+        <li><a href="http://localhost:3000/b">Cadastrados(BACK)</a></li>
+      </ul>
+    </nav>
+    <h1>Hello World...!!!</h1>
+    <h4>Check the newest technologies we've got:</h4>
+
+    <p>
+      <%= dados[0].conteudo %> (<%= dados[0].categoria %>) [NEWEST OF NEWEST]
+    </p>
+    <% for(i=1; i<dados.length; i++){ %>
+      <p>
+        <%= dados[i].conteudo %> (<%= dados[i].categoria %>)
+      </p>
+    <% } %>
+    <p>... and more!!!</p>
+  </body>
+</html>
+
+
+
